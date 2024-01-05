@@ -9,7 +9,7 @@ if __name__ == "__main__":
     result_mul = mul(a, b)
     result_div = div(a, b)
 
-    print("{} + {} = {}".format(a, b add(a, b)))
-    print("{} - {} = {}".format(a, b sub(a, b)))
-    print("{} * {} = {}".format(a, b mul(a, b)))
-    print("{} / {} = {}".format(a, b div(a, b)))
+    print("{} + {} = {}".format(a, b result_add(a, b)))
+    print("{} - {} = {}".format(a, b result_sub(a, b)))
+    print("{} * {} = {}".format(a, b result_mul(a, b)))
+    print("{} / {} = {}".format(a, b result_mul(a, b)))
