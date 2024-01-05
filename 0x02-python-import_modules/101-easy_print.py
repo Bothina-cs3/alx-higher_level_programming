@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-print("#pythoiniscool")
+import easy_print
