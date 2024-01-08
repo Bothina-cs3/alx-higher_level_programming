@@ -3,7 +3,7 @@ def print_matrix_integer(matrix=[[]]):
     if not matrix:
         return None
     for submatrix in matrix:
-        if len(submatrix) == 0:
+        if not submatrix:
             print()
         for i in range(len(submatrix)):
             print("{:d}".format(submatrix[i]),
