@@ -1,20 +1,2 @@
 #!/bin/bash
-
-if [ -z "$PYFILE" ]; then
-    echo "Error: Environment variable PYFILE not set."
-    exit 1
-fi
-
-# Compile the Python script
-python3 -m compileall -b "$PYFILE"
-
-# Check if compilation was successful
-if [ $? -eq 0 ]; then
-    echo "Compiling $PYFILE ..."
-    compiled_filename="${PYFILE}c"
-    mv "__pycache__/$compiled_filename" .
-    rm -rf "__pycache__"
-    ls -l "$compiled_filename"
-else
-    echo "Compilation failed."
-fi
+python3 -m compileall -b $PYFILE
