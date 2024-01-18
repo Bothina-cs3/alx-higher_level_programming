@@ -1,8 +1,7 @@
-carrie@ubuntu:~/0x00$ cat lists.h
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - singly linked list
@@ -10,7 +9,6 @@ carrie@ubuntu:~/0x00$ cat lists.h
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * 
  */
 typedef struct listint_s
 {
