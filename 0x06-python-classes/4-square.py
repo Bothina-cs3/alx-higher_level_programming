@@ -30,8 +30,9 @@ class Square:
     def size(self, value):
         """property setter for size.
 
+
         Args:
-            value (int): size of a Square
+            value (int): size of a Square (1 side).
 
         Raises:
             TypeError: size must be an integer
