@@ -2,10 +2,9 @@
 """Defines a class Rectangle"""
 
 
-
 class Rectangle:
     """
-    Class Rectangle that defines a rectangle by: (based on 1-rectangle.py).
+    Class that defines properties of rectangle by: (based on 1-rectangle.py).
 
     Attributes:
         width (int): width of the rectangle.
