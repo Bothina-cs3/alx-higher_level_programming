@@ -7,10 +7,13 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(
-            sys.argv[2], sys.argv[1])
-    res = requests.get(url)
+    repo = sys.argv[1]
+    owner = sys.argv[2]
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(owner, repo)
+    params = {'per_page': 10}
+    res = requests.get(url, params=params)
     commits = res.json()
-    for commit in commits[:10]:
-        print(commit.get('sha'), end=' :')
-        print(commit.get('commit').get('author').get('name'))
+    for commit in commits:
+        sha = commit.get('sha')
+        author = commit.get('commit').get('author').get('name')
+        print('{}: {}'.format(sha, author))
